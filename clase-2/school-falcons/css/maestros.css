@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  box-sizing: border-box;
+}
+
+/* Global */
+.btn--border {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 25px;
+}
+.icon {
+  background-color: #b71c1c;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #212529;
+}
+input,
+textarea {
+  font-family: inherit;
+}
+input:invalid {
+  border-color: #e34949;
+  background-color: #fbe5e5;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #5a6169;
+}
+
+/* Bienvenida */
+body .bienvenida {
+  background: url("../images/carousel-3.jpg") no-repeat center fixed;
+  background-size: cover;
+  position: relative;
+}
+body .bienvenida::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.9;
+  background-color: #212529;
+}
+body .bienvenida nav .navbar-nav {
+  font-weight: 300;
+}
+
+/* maestros */
+body .maestros {
+  min-height: 500px;
+  border-bottom: 1px solid #eaebed;
+}
+body .maestros .avatar {
+  width: 100px;
+  height: 100px;
+}
+body .maestros .avatar img {
+  width: 100%;
+  border-radius: 50px;
+  box-shadow: 0px 4px 15px rgba(33, 37, 41, 0.3);
+}
+body .maestros .underline--center {
+  position: relative;
+}
+body .maestros .underline--center:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  bottom: -20px;
+  left: 50%;
+  margin-left: -15px;
+  background-color: #b71c1c;
+}
+
+/* Media */
+@media (max-width: 400px) {
+  body .bienvenida .contenido__wrapper .contenido__wrapper--encabezado {
+    font-size: 2em;
+  }
+  body .caracteristicas__inner {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  body .caracteristicas__inner article .icon {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  body .bienvenida .contenido__wrapper {
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-align: center;
+  }
+  body .bienvenida .contenido__wrapper img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 992px) {
+  body .caracteristicas__bg {
+    display: none;
+  }
+  body .caracteristicas__inner {
+    padding-left: 50px !important;
+  }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" 
+		  content="width=device-width, initial-scale=1.0 user-scalable=no"/>
+	<meta http-equiv="X-UA-Compatible" 
+		  content="ie=edge" />
+	<link rel="icon" href="images/feather-alt-solid.png" type="image/x-icon">
+
+	<!--CSS Dependencies-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/contacto.css" />
+
+	<title>Escuela Futsal Lince</title>
+</head>
+<body>
+	
+	<!--Sección de Bienvenida-->
+	<div class="bienvenida d-flex justify-content-center flex-column" id="home">
+		<div class="container mb-3">
+			<nav class="navbar navbar-expand-lg navbar-dark pt-4 px-0">
+				<a class="navbar-brand  mr-5" href="#home">
+					<i class="fas fa-feather-alt" style="color:#b71c1c"></i>
+					Escuela Futsal Lince</a>
+				<button 
+				class="navbar-toggler" 
+				type="button" 
+				data-toggle="collapse" 
+				data-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<div class="navbar-nav ">
+
+						<a class="nav-item nav-link" href="index.html">Home</a>
+						<a class="nav-item nav-link" href="caracteristicas.html">Características</a>
+						<a class="nav-item nav-link" href="maestros.html">Maestros</a>
+						<a class="nav-item nav-link" href="testimonios.html">Experiencias y testimonios</a>
+						<a class="nav-item nav-link active" href="contacto.html">Contacto</a>
+
+					</div>
+
+					<div class="header-social navbar-nav ml-auto">
+						<a 
+						href="https://www.facebook.com/" 
+						target="_blank" 
+						class="nav-item nav-link"> 
+							<i class="fab fa-facebook-f"></i>
+						</a>
+						<a 
+						href="https://www.instagram.com" 
+						target="_blank"
+						class="nav-item nav-link">
+							<i class="fab fa-instagram"></i>
+						</a>
+						<a 
+						href="https://www.youtube.com" 
+						target="_blank"
+						class="nav-item nav-link">
+							<i class="fab fa-youtube"></i>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		
+	</div>
+
+	<!--Contacto-->
+	<div class="contacto pt-4 pb-5" id="contacto">
+		<h3 class="text-center underline--center m-5">Contáctenos</h3>
+		<div class="container">
+			<form class="contacto-form form-row col-md-10 col-lg-6 col-sm-12 mx-auto p-4">
+
+				<div class="form-group col-md-6">
+					<label for="name">Nombre</label>
+					<input type="text" class="form-control" id="name">
+				</div>
+
+				<div class="form-group col-md-6">
+					<label for="surname">Apellidos</label>
+					<input type="text" class="form-control" id="surname">
+				</div>
+
+				<div class="form-group col-12">
+					<label for="email">Correo electrónico</label>
+					<input type="email" class="form-control" id="email">
+				</div>
+
+				<div class="form-group col-12">
+					<label for="mensage">Mensage</label>
+					<textarea name="mensage" 
+					id="mensage" 
+					cols="30" 
+					rows="10"
+					class="form-control"
+					placeholder="Coméntanos tus dudas o sugerencias..."
+					></textarea>
+				</div>
+
+				<button type="button" 
+				class="btn btn-outline-danger mx-auto btn--border"
+				id="js-contacto-btn"
+				>Enviar mensage</button>	
+					
+			</form>
+		</div>
+	</div>
+
+	<!--Map-->
+	<div class="bg-light" id="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15605.397687497287!2d-77.0404515!3d-12.0882144!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaf47349f11877cb7!2sParque+Mariscal+Ram%C3%B3n+Castilla!5e0!3m2!1ses-419!2spe!4v1555986919192!5m2!1ses-419!2spe" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+
+	<!--Footer-->
+	<footer>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="#">Escuela Futsal Lince</a>		
+			</div>
+		</nav>
+	</footer>
+
+
+	<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
